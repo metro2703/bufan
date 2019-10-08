@@ -146,12 +146,12 @@
                         </div>
                         <div class="swiper-slide">Slide 2</div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next btn"></div>
+                    <div class="swiper-button-prev btn"></div>
                     <div class="swiper-pagination en-pagination"></div>
 
                 </div>
-                
+
             </div>
         </div>
         <!-- 学员就业 -->
@@ -162,60 +162,60 @@
             </div>
             <div class="work-c">
                 <div class="swiper-container work-swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-                                <div class="desc">
-        
-                                </div>
-                                <a href="" class="detail">详情</a>
-                                <div class="avatar"></div>
-                                <p class="company">入职公司:网易</p>
-                                <p class="role">UI设计师</p>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+                            <div class="desc">
+
                             </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-        
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-        
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-        
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-        
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-        
-                            </div>
-                            <div class="swiper-slide">
-                                <span class="line"></span>
-                            </div>
+                            <a href="" class="detail">详情</a>
+                            <div class="avatar"></div>
+                            <p class="company">入职公司:网易</p>
+                            <p class="role">UI设计师</p>
                         </div>
-                        <div class="swiper-pagination work-pagination"></div>
-        
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination work-pagination"></div>
+
                 </div>
                 <div class="work-data">
                     <div class="work-data-item">
                         <p class="number">98<span>%</span></p>
-                        <p>不凡学员就业率</p>
+                        <p>学员就业率</p>
                     </div>
                     <div class="work-data-item">
                         <p class="number">1500<span class="add">+</span></p>
-                        <p>不凡累计毕业学员</p>
+                        <p>累计毕业学员</p>
                     </div>
                     <div class="work-data-item">
                         <p class="number">6000<span class="add">+</span></p>
-                        <p>不凡学员平均薪资</p>
+                        <p>学员平均薪资</p>
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <!-- 公开课 -->
         <div class="public">
@@ -360,7 +360,7 @@
             },
         });
         var swiperWork;
-        if($(document).width()<=768){
+        if ($(document).width() <= 768) {
             console.log($(document).width());
             swiperWork = new Swiper('.work-swiper', {
                 pagination: {
@@ -368,7 +368,7 @@
                     clickable: true,
                 },
             });
-        }else{
+        } else {
             swiperWork = new Swiper('.work-swiper', {
                 slidesPerView: 3,
                 spaceBetween: 0,
@@ -382,7 +382,7 @@
                 },
             });
         }
-        
+
         var swiperEnviroment = new Swiper('.en-swiper', {
             loop: true,
             autoplay: true,
@@ -401,23 +401,19 @@
                 if (item.isIntersecting) {
                     // console.log(item.target.children)
                     var temp = item.target;
-                    $(temp).children().each((index,ele)=>{
+                    $(temp).children().each((index, ele) => {
                         ele.classList.add('fadeInUp');
-                    })  
-                // item.target.classList.add("fadeInUp"); 
-                observer.unobserve(item.target); // 移除监听
+                    })
+                    // item.target.classList.add("fadeInUp"); 
+                    observer.unobserve(item.target); // 移除监听
                 }
             });
         });
-       
+
         var list = document.querySelectorAll('.observer');
-        list.forEach(item=>{
+        list.forEach(item => {
             observer.observe(item);
         });
-        
-        
-
-
     </script>
 </body>
 

@@ -32,6 +32,10 @@
 
     }
 
+    .main .course .timing {
+        top: -20px;
+    }
+
     .main .course-item .detail {
         width: 100%;
         margin-right: 0;
@@ -42,10 +46,13 @@
         text-align: left;
         margin-top: 15px;
     }
-    .main .course-item .class-name{
+
+    .main .course-item .class-name {
         margin: 11px;
+        padding-left: 11px;
     }
-    .main .course-item .class-name span{
+
+    .main .course-item .class-name span {
         display: block;
     }
 }

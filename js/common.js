@@ -32,10 +32,10 @@ window.onscroll = function () {
     if (scrollTop == 0) {
         $('.header').removeClass('mini');
     }
-    if (scrollTop > 360 && $('.sub-nav')[0]) {
+    if (scrollTop > 398 && $('.sub-nav')[0]) {
         $('.sub-nav').addClass('sub-nav-fixed');
         // $('.header').css('display', 'none');
-        $('.main').css('paddingTop', '106px')
+        $('.main').css('paddingTop', '68px')
     } else {
         $('.sub-nav').removeClass('sub-nav-fixed');
         $('.header').css('display', 'block');

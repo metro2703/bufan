@@ -1,21 +1,25 @@
+body {
+    background-color: #f5f5f5;
+}
+
 .sub-nav {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 54px 0 16px 0;
+    padding: 16px 0;
     background-color: #f5f5f5;
     overflow: hidden;
-    transition: top ease .4s;
+    transition: all ease .4s;
     top: 0;
 }
 
 .sub-nav.sub-nav-fixed {
     position: fixed;
-    top: -38px;
-    left: 50%;
-    padding-bottom: 0;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
+    /* padding-bottom: 0; */
+    /* transform: translateX(-50%); */
     z-index: 99;
     background-color: #fff;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.03);

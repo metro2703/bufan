@@ -7,6 +7,8 @@
     background-position: center;
     background-size: cover;
     margin-top: 60px;
+    margin-bottom: 38px;
+
 }
 
 .main {
@@ -30,7 +32,8 @@
     border-radius: 5px;
     margin-top: 64px;
 }
-.en-swiper .desc{
+
+.en-swiper .desc {
     position: absolute;
     right: 0;
     top: 0;
@@ -40,26 +43,30 @@
     background-color: #fff;
     z-index: 999;
 }
-.desc h3{
+
+.desc h3 {
     font-size: 24px;
     font-weight: bolder;
     color: #333;
     line-height: 33px;
     margin-top: 54px;
 }
-.desc p{
+
+.desc p {
     font-size: 14px;
     color: #666;
     line-height: 20px;
     margin-top: 13px;
 }
+
 .en-swiper .swiper-slide {
     background-color: pink;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.desc .btn{
+
+.desc .btn {
     width: 48px;
     height: 30px;
     border-radius: 5px;
@@ -71,13 +78,16 @@
     top: auto;
     bottom: 30px;
 }
-.desc .btn.swiper-button-next{
+
+.desc .btn.swiper-button-next {
     right: 110px;
 }
-.desc .btn.swiper-button-prev{
-   left: 110px;
+
+.desc .btn.swiper-button-prev {
+    left: 110px;
     transform: rotate(180deg);
 }
-.desc .btn:hover{
+
+.desc .btn:hover {
     background-color: gray;
 }
