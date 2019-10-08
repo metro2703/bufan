@@ -35,7 +35,7 @@ window.onscroll = function () {
     if (scrollTop > 398 && $('.sub-nav')[0]) {
         $('.sub-nav').addClass('sub-nav-fixed');
         // $('.header').css('display', 'none');
-        $('.main').css('paddingTop', '68px')
+        $('.main').css('paddingTop', '52px')
     } else {
         $('.sub-nav').removeClass('sub-nav-fixed');
         $('.header').css('display', 'block');
