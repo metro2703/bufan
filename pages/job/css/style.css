@@ -1,0 +1,218 @@
+.main {
+    padding: 0 0 90px 0;
+    background-color: #f5f5f5;
+    margin-top: 60px;
+}
+
+.main-c {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1160px;
+    padding-top: 38px;
+    margin: 0 auto;
+}
+
+.main-c h3 {
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    padding-bottom: 27px;
+}
+
+.student-info {
+    width: 260px;
+    height: 340px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #666;
+    border-radius: 5px;
+}
+
+.student-info img {
+    display: block;
+    width: 100%;
+    height: 170px;
+}
+
+.student-info p {
+    height: 170px;
+    line-height: 170px;
+    box-sizing: border-box;
+    padding-left: 45px;
+}
+
+.student-info p span {
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+.job-info {
+    width: 865px;
+    /* height: 2px; */
+}
+
+.job-info h2 {
+    font-size: 26px;
+    line-height: 37px;
+    font-weight: bolder;
+    color: #333;
+}
+
+.job-info h3 {
+    color: #999;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.job-info .part-1 .job-detail {
+    height: 120px;
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.part-1 .job-detail li {
+    background-size: 38px 38px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 52px;
+}
+
+.part-1 .job-detail .company {
+    background-image: url('../img/company.png');
+
+}
+
+.part-1 .job-detail .job {
+    background-image: url('../img/job.png');
+}
+
+.part-1 .job-detail .salary {
+    background-image: url('../img/salary.png');
+
+}
+
+.part-1 .job-detail h4 {
+    line-height: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.part-1 .job-detail p {
+    line-height: 22px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.job-info .part-2 .text {
+    padding: 25px 35px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.job-info .part-3 {
+    position: relative;
+}
+
+.job-info .part-3 .check {
+    padding: 0 30px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.part-3 .check li {
+    display: flex;
+    align-items: center;
+    height: 119px;
+    border-bottom: 1px solid rgba(151, 151, 151, .2);
+    background: url('../img/pass.png') no-repeat right center;
+    background-size: 63px 47px;
+}
+
+.part-3 .check .icon {
+    width: 38px;
+    height: 42px;
+    font-size: 20px;
+    color: #4895FA;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    background: url('../img/box.png') no-repeat center;
+    background-size: 100% 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px 0 rgba(36, 152, 242, 0.30);
+}
+
+.part-3 .check .check-title {
+    margin-left: 35px;
+
+}
+
+.part-3 .check h4 {
+    font-weight: bolder;
+    font-size: 18px;
+    color: #333;
+    line-height: 25px;
+    margin-bottom: 8px;
+
+
+}
+
+.part-3 .check p {
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.part-3 .check p span {
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    background-color: rgba(102, 102, 102, .3);
+    margin: 0 20px;
+    vertical-align: middle;
+}
+
+.part-3 .btn {
+    position: relative;
+    top: -1px;
+    width: 100%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background-image: linear-gradient(180deg, rgba(227, 227, 227, 0.35) 0%, rgba(207, 207, 207, 0.05) 98%);
+    border: 1px solid #EEEEEE;
+    border-radius: 0 0 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+    cursor: pointer;
+}
+
+.part-4 .offer-img {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 430px;
+    padding: 0 110px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.part-4 .offer-img img {
+    display: block;
+    width: 188px;
+    height: 334px;
+}

@@ -1,0 +1,82 @@
+.banner {
+    height: 300px;
+    /* padding-bottom: 18.75%; */
+    /* background-image: linear-gradient(179deg, #20253D 0%, #374469 100%); */
+    background: url('../img/ui-banner.png') no-repeat center;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.main {
+    padding: 38px 0 90px 0;
+    padding-top: 0;
+    background-color: #f5f5f5;
+}
+
+.main-c {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.project {
+    position: relative;
+    top: -38px;
+    background-color: #fff;
+    width: 100%;
+    height: 1240px;
+    border-radius: 5px;
+    padding: 58px 50px 52px 50px;
+    box-sizing: border-box;
+}
+
+.project h2 {
+    position: relative;
+    width: fit-content;
+    font-size: 30px;
+    line-height: 42px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.project h2::after {
+    content: '移动端';
+    /* position: absolute;
+    right: -75px;
+    top: 9px; */
+    display: inline-block;
+    width: 51px;
+    height: 25px;
+    margin-left: 25px;
+    vertical-align: 5px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-image: linear-gradient(270deg, #39B6F9 0%, #3C70F2 100%);
+    border-radius: 2px;
+}
+
+.project .tip {
+    height: 79px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.tip span {
+    display: inline-block;
+    font-size: 15px;
+    color: #666;
+    padding: 13px 40px 0 0;
+}
+
+.others {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.others .other-item {
+    width: 570px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 5px;
+}

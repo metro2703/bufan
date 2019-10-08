@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+    <link rel="stylesheet" href="../../../css/m-common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="m-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-c">
+            <a href="" class="logo">
+
+            </a>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="" target="_blank">首页</a>
+                    <span class="line"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="" target="_blank">ui设计</a>
+                    <span class="line"></span>
+
+                </li>
+                <li class="nav-item">
+                    <a href="" target="_blank">前端开发</a>
+                    <span class="line"></span>
+
+                </li>
+                <li class="nav-item active">
+                    <a href="" target="_blank">不凡说</a>
+                    <span class="line"></span>
+
+                </li>
+                <li class="nav-item">
+                    <a href="" target="_blank">导航</a>
+                    <span class="line"></span>
+
+                </li>
+            </ul>
+            <a href="javascript:;" class="m-nav-icon close">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main-c detail">
+            <div class="tip">
+                不凡说 / 文章详情
+            </div>
+            <div class="article">
+                <div class="title">
+                    <h2>数据可视化</h2>
+                    <p class="date">2019-07-29</p>
+                </div>
+            </div>
+            <div class="side-list">
+                <h3>其他文章</h3>
+                <ul>
+                    <li class="side-item">哈哈哈哈哈哈哈哈哈哈哈哈哈呵呵呵呵呵呵呵呵呵呵或或或或</li>
+                    <li class="side-item">哈哈哈哈</li>
+                    <li class="side-item">哈哈哈哈</li>
+                    <li class="side-item">哈哈哈哈</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class=" footer">
+        <div class="footer-c">
+            <div class="zx-list">
+                <div class="address">
+                    <p class="address-name regular">地址:</p>
+                    <p class="address-info">
+                        郑州市 / 郑东新区金水东路绿地新都会 / 6号楼1210
+                    </p>
+                </div>
+
+                <div class="tel">
+                    <p class="tel-name regular">电话:</p>
+                    <p class="tel-number">188-3818-0363</p>
+                    <p class="tel-timing">(周一至周日 9:00 - 6:30 )</p>
+                </div>
+
+                <a href="" class="zx-btn">QQ在线咨询</a>
+
+                <div class="qr">
+                    <div class="img"></div>
+                    <p class="tip">微信扫码咨询/报名</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="links">
+        <div class="links-c">
+            友情链接:
+            <a href="" target="_blank">站酷</a>
+            <a href="" target="_blank">花瓣</a>
+            <a href="" target="_blank">ui中国</a>
+            <a href="" target="_blank">爱果果</a>
+            <a href="" target="_blank">github</a>
+            <a href="" target="_blank">oschina</a>
+            <a href="" target="_blank">csdn</a>
+            <span>Copyright© 2017 不凡学院 豫ICP备 17015347号 </span>
+        </div>
+    </div>
+
+    <script src="../../../js/jquery-3.3.1.min.js"></script>
+    <script src="../../../js/common.js"></script>
+    <script>
+        window.onscroll = function () {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var sideList = $('.side-list');
+            // var bodyW = $(document).width();
+            // var cW = $('.main-c').width();
+            // var fixedR = (bodyW - cW) / 2;
+            if (scrollTop > 86) {
+                sideList.css({
+                    top: (scrollTop + 4) + 'px'
+                })
+            } else {
+                $('.side-list').css({
+                    top: '86px'
+                })
+            }
+        }
+    </script>
+</body>
+
+</html>

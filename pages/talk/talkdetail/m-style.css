@@ -1,0 +1,16 @@
+@media(max-width:768px) {
+    .main .main-c {
+        width: 90%;
+    }
+
+    .main .side-list {
+        display: none;
+    }
+
+    .main .article {
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        box-sizing: border-box;
+    }
+}

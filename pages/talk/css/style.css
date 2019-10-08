@@ -1,0 +1,102 @@
+.main {
+    background-color: #f5f5f5;
+    margin-top: 60px;
+}
+
+.talk {
+    width: 1160px;
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    background-color: #f5f5f5;
+}
+
+.talk-title {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.talk-title .talk-tab {
+    /* float: left; */
+    width: 5em;
+    margin: 0 10px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.talk-title .talk-tab.active {
+    color: #fff;
+    background-image: linear-gradient(-40deg, #A066FC 0%, #5939EC 100%);
+
+}
+
+.talk-title .talk-tab:hover {
+    color: #fff;
+    background-image: linear-gradient(-40deg, #A066FC 0%, #5939EC 100%);
+
+}
+
+.talk .talk-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.talk .talk-item {
+    width: 570px;
+    margin-top: 36px;
+}
+
+.talk .talk-item a {
+    display: block;
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.talk .talk-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease;
+
+}
+
+.talk .talk-item a:hover img {
+    transform: scale(1.08);
+}
+
+.talk .talk-item .talk-name {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 10px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.talk .more {
+    width: 198px;
+    height: 48px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 48px;
+    border: 1px solid #ACACAC;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 58px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.talk .more:hover {
+    background-image: linear-gradient(-40deg, #A066FC 0%, #5939EC 100%);
+    color: #fff;
+}

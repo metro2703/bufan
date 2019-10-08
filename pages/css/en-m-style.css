@@ -1,0 +1,34 @@
+@media(max-width:768px) {
+    .main .main-c {
+        width: 90%;
+    }
+
+    body .sub-nav .sub-item {
+        /* width: 20%; */
+        padding: 0 calc(10% - 1em);
+    }
+    .main .en-swiper {
+        width: 100%;
+    }
+    .main .en-swiper .desc{
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: 150px;
+    }
+    .main .desc h3{
+        margin-top: 14px;
+    }
+    .main .desc .btn{
+        bottom: 15px;
+        margin: 0 10px;
+    }
+    .main .desc .btn.swiper-button-prev{
+        left: auto;
+        right: 50%;
+     }
+    .main  .desc .btn.swiper-button-next{
+        left: 50%;
+        right: auto;
+    }
+}

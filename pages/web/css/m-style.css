@@ -1,0 +1,53 @@
+@media(max-width:768px) {
+    .main .main-c {
+        width: 90%;
+    }
+
+    body .sub-nav .sub-item {
+        /* width: 20%; */
+        padding: 0 calc(10% - 1em);
+    }
+    .main .super .center {
+        width: 80px;
+        height: auto;
+        /* writing-mode: lr-tb; */
+        word-break: break-all;
+    }
+
+    .main .super .super-item {
+        line-height: 60px;
+    }
+
+    .main .super .center p {
+        display: none;
+
+    }
+    .main .course .timing{
+        display: none;
+    }
+    .main .class-list li{
+        /* margin: 11px 0; */
+    }
+    .main .class-list li span{
+        display: block;
+        width: 100%;
+    }
+
+    .main .public-list {
+        flex-wrap: wrap;
+    }
+
+    .main .public-list .public-item {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .main .public .img {
+        height: 180px;
+    }
+
+    .main .public .img img {
+        width: 80px;
+    }
+}

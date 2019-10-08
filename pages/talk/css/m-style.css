@@ -1,0 +1,18 @@
+@media(max-width:768px) {
+    .main .talk {
+        width: 90%;
+    }
+
+    .main .talk-title {
+        justify-content: center;
+    }
+
+    .main .talk .talk-item {
+        width: 100%;
+        margin-top: 72px;
+    }
+
+    .main .talk .talk-item .talk-name {
+        margin-top: 20px;
+    }
+}

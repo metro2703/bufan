@@ -1,0 +1,104 @@
+.banner {
+    height: 300px;
+    /* padding-bottom: 18.75%; */
+    /* background-image: linear-gradient(179deg, #20253D 0%, #374469 100%); */
+    /* background: url('../img/H5-banner.png') no-repeat center; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.main {
+    padding: 0 0 90px 0;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.main-c {
+    width: 1160px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+/* 师资 */
+.teacher-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 64px;
+}
+
+.teachers h2 {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.teacher-item {
+    position: relative;
+    width: 570px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    transition: all ease .4s;
+}
+.teacher-item:hover{
+    box-shadow: 0 18px 16px -10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+.teacher-info {
+    margin-left: 294px;
+    margin-top: 24px;
+    text-align: left;
+    line-height: 21px;
+}
+
+.teacher-info h3 {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    height: 24px;
+    border-bottom: 4px solid #FF9600;
+    color: #333;
+    font-weight: bolder;
+    line-height: 36px;
+}
+
+.teacher-info .name {
+    font-size: 15px;
+    /* line-height: 21px; */
+    margin-top: 21px;
+    margin-bottom: 7px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.teacher-info .exp {
+    font-size: 14px;
+    color: #666;
+    height: 84px;
+}
+
+.teacher-info .course {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #FF9600;
+
+}
+
+.teacher-item img {
+    position: absolute;
+    top: -33px;
+    left: 46px;
+    width: 200px;
+    height: 255px;
+}

@@ -1,0 +1,132 @@
+@media(max-width:768px) {
+    .header .header-c {
+        width: 90%;
+    }
+
+    .header .header-c .nav {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        width: auto;
+        max-height: 0;
+        transition: all linear .8s;
+        overflow: hidden;
+        z-index: 99;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    }
+
+    .header .header-c .nav.open {
+        max-height: 300px;
+        border-radius: 4px;
+    }
+
+    .header .header-c .nav .nav-item {
+        display: block;
+        width: 80px;
+        height: 60px;
+        margin: 0 25px;
+        box-sizing: content-box;
+    }
+
+    .header .header-c .nav .nav-item a {
+        line-height: 60px;
+    }
+
+    .header .header-c .m-nav-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        width: 72px;
+        height: 60px;
+        color: #181818;
+        transition: all ease-in-out .4s;
+    }
+
+    .header .header-c .m-nav-icon span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #888;
+        margin: 0 auto;
+        transition: all ease .4s;
+    }
+
+    .header .header-c .m-nav-icon.open {
+        transform: rotateZ(45deg);
+    }
+
+    .header .header-c .m-nav-icon span:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .header .header-c .m-nav-icon span:nth-child(2) {
+        margin-top: 5px;
+    }
+
+    .header .header-c .m-nav-icon span:nth-child(3) {
+        margin-top: 5px;
+    }
+
+    .header .header-c .m-nav-icon.open span:nth-child(3) {
+        transform: translateY(-7px) rotateZ(90deg);
+    }
+
+    .header .header-c .m-nav-icon.open span:nth-child(1) {
+        transform: translateY(7px);
+    }
+
+    .header .header-c .m-nav-icon.close span {
+        transition-delay: .8s;
+    }
+
+    .header .header-c .m-nav-icon.open,
+    .header .header-c .m-nav-icon:hover {
+        color: #0F73D8;
+    }
+
+    .footer .footer-c {
+        width: 90%;
+        padding: 0;
+        padding-top: 30px;
+
+    }
+
+    .footer .zx-list .qr,
+    .footer .zx-list .address,
+    .footer .zx-list .tel,
+    .footer .zx-list .zx-btn {
+        width: 100%;
+        margin: 30px;
+        margin-top: 0;
+    }
+
+    .footer .zx-list .tel {
+        text-align: center;
+    }
+
+    .footer .zx-list .address-name {
+        text-align: center;
+    }
+
+    .footer .zx-list .qr .img {
+        margin: 0 auto;
+    }
+
+    .links .links-c {
+        width: 90%;
+        line-height: 35px;
+
+    }
+
+    .links .links-c span {
+        display: block;
+        padding: 0;
+    }
+
+
+}

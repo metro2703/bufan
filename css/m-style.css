@@ -1,0 +1,148 @@
+@media(max-width:768px) {
+
+    body .swiper-container.banner-swiper{
+        width: 100%;
+    }
+
+    /* 不凡优势 */
+    .main .super {
+        width: 90%;
+    }
+
+    .main .super-list {
+        flex-wrap: wrap;
+    }
+
+    .main .super-list .super-item {
+        width: 100%;
+        margin: 15px 0;
+        height: 180px;
+    }
+
+    .main .super-item img {
+        display: none;
+        /* width: 170px;
+        left: 35px;
+        top: 3px; */
+    }
+
+    /* 课程介绍 */
+    .main .course {
+        width: 90%;
+    }
+
+    .main .course-list {
+        flex-wrap: wrap;
+    }
+
+    .main .course-list .course-item {
+        width: 100%;
+        margin: 15px 0;
+        height: 270px;
+    }
+    /* 学校环境 */
+    .main .enviroment-c{
+        width: 90%;
+    }
+
+    .main .enviroment .imgs{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 195px;
+        margin: 30px 0;
+    }
+    .main .enviroment .imgs div{
+        width: 48%;
+        height: 195px;
+    }
+    .main .enviroment .en-swiper{
+        width: 100%;
+    }
+    /* 学员就业 */
+    .main .work{
+        width: 90%;
+        
+    }
+    .main .work-c{
+        flex-wrap: wrap-reverse;
+    }
+    .main .swiper-container.work-swiper{
+        width: 100%;
+    }
+    .main .work-swiper .swiper-slide{
+        width: 100%;
+    }
+    .main .work-swiper .swiper-slide-active{
+        padding: 15px 0;
+    }
+    .main .work-data{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .main .work-data .work-data-item:nth-child(2){
+        flex: 1;
+    }
+    .main .work-data .work-data-item:nth-child(3){
+        flex: 1;
+    }
+    .main .work-data .work-data-item{
+        width: 27%;
+        padding: 45px 0;
+    }
+    /* 公开课 */
+    .main .public {
+        width: 90%;
+    }
+
+    .main .public .title {
+        height: auto;
+    }
+
+    .main .public .tab {
+        position: static;
+        text-align: center;
+        height: 24px;
+        padding-top: 60px;
+    }
+
+    .main .public-list {
+        flex-wrap: wrap;
+    }
+
+    .main .public-list .public-item {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .main .public .img {
+        height: 180px;
+    }
+
+    .main .public .img img {
+        width: 80px;
+    }
+
+    /* 不凡说 */
+    .main .talk {
+        width: 90%;
+    }
+
+    .main .talk-list {
+        flex-wrap: wrap;
+    }
+
+    .main .talk-list .talk-item {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .main .talk .img {
+        height: 180px;
+    }
+}
