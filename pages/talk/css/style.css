@@ -1,6 +1,5 @@
 .main {
     background-color: #f5f5f5;
-    margin-top: 60px;
 }
 
 .talk {
@@ -27,7 +26,9 @@
     cursor: pointer;
     transition: all ease .4s;
 }
-
+.talk-title .talk-tab.ml{
+    margin-left: 0;
+}
 .talk-title .talk-tab.active {
     color: #fff;
     background-image: linear-gradient(-40deg, #A066FC 0%, #5939EC 100%);
@@ -52,18 +53,21 @@
 }
 
 .talk .talk-item a {
+    position: relative;
     display: block;
     width: 100%;
-    height: 210px;
+    padding-top: 38.1818%;
     overflow: hidden;
     border-radius: 5px;
 }
 
 .talk .talk-item img {
-    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    transition: all .2s ease;
+    transition: all .4s ease;
 
 }
 
@@ -99,4 +103,21 @@
 .talk .more:hover {
     background-image: linear-gradient(-40deg, #A066FC 0%, #5939EC 100%);
     color: #fff;
+}
+
+
+
+@media(max-width:768px) {
+    .main .talk {
+        width: 90%;
+    }
+
+    .main .talk .talk-item {
+        width: 100%;
+        /* margin-top: 72px; */
+    }
+
+    .main .talk .talk-item .talk-name {
+        margin-top: 15px;
+    }
 }

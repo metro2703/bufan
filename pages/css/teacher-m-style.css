@@ -3,11 +3,6 @@
         width: 90%;
     }
 
-    body .sub-nav .sub-item {
-        /* width: 20%; */
-        padding: 0 calc(10% - 1em);
-    }
-
     .main .teacher-list {
         margin-top: 40px;
     }

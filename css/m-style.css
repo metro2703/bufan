@@ -16,7 +16,6 @@
     .main .super-list .super-item {
         width: 100%;
         margin: 15px 0;
-        height: 180px;
     }
 
     .main .super-item img {
@@ -123,7 +122,6 @@
 
     .main .public .tab {
         position: static;
-        text-align: center;
         height: 24px;
         padding-top: 60px;
     }
@@ -134,16 +132,11 @@
 
     .main .public-list .public-item {
         width: 100%;
-        text-align: center;
         margin: 15px 0;
     }
 
-    .main .public .img {
-        height: 180px;
-    }
-
     .main .public .img img {
-        width: 80px;
+        width: 70px;
     }
 
     /* 不凡说 */
@@ -157,11 +150,7 @@
 
     .main .talk-list .talk-item {
         width: 100%;
-        text-align: center;
         margin: 15px 0;
     }
 
-    .main .talk .img {
-        height: 180px;
-    }
 }

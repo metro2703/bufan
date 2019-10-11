@@ -2,26 +2,30 @@
     .main .main-c {
         width: 90%;
     }
+    .main .super{
+        flex-wrap: wrap;
+    }
+    .main .super .bf {
+        width: 100%;
+        justify-content: center;
+    }
 
-    body .sub-nav .sub-item {
-        /* width: 20%; */
-        padding: 0 calc(10% - 1em);
+    .main .super .sibling {
+        width: 100%;
+        justify-content: center;
     }
 
     .main .super .center {
-        width: 80px;
-        height: auto;
+       width: 100%;
+        height: 120px;
+        line-height: 120px;
         /* writing-mode: lr-tb; */
         word-break: break-all;
     }
 
-    .main .super .super-item {
-        line-height: 60px;
-    }
-
-    .main .super .center p {
-        display: none;
-
+    .main .main-c .super .super-item {
+        line-height: 50px;
+        border-radius: 100px;
     }
 
     .main .course .timing {
@@ -45,15 +49,9 @@
 
     .main .public-list .public-item {
         width: 100%;
-        text-align: center;
         margin: 15px 0;
     }
-
-    .main .public .img {
-        height: 180px;
-    }
-
     .main .public .img img {
-        width: 80px;
+        width: 70px;
     }
 }
