@@ -1,31 +1,29 @@
 @font-face {
-    font-family: PingFang;
-    src: url("../font/pingfang.ttf");
+    font-family: 'DINCondensed';
+    src: url(../font/DIN\ Condensed\ Bold.woff.ttf);
 }
 
 html,
 body {
-    /* font-family:
-        system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
-        Helvetica, Arial,
-        sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol; */
-    font-family: 'PingFang', 'Hiragino Sans GB', 'Microsoft YaHei';
+    /* font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif; */
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
 }
 
 .header {
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 999; */
+    position: relative;
     width: 100%;
     height: 60px;
     background-color: #fff;
-    transition: all .4s cubic-bezier(.215, .61, .355, 1) 0s;
+    /* transition: all .4s cubic-bezier(.215, .61, .355, 1) 0s; */
 
 }
 
-.header.mini {
+/* .header.mini {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
-}
+} */
 
 .header-c {
     position: relative;
@@ -39,6 +37,7 @@ body {
     width: 121px;
     height: 100%;
     background: url("../img/LOGO.png") no-repeat center;
+    background-size: 100%;
 }
 
 .header-c .nav {
@@ -76,8 +75,7 @@ body {
 }
 
 .nav .nav-item.active a {
-    font-weight: bolder;
-    /* font-family: PingFangSC-Medium; */
+    font-weight: bold;
     color: #333;
 }
 
@@ -86,8 +84,6 @@ body {
 }
 
 .nav .nav-item:hover a {
-    font-weight: bolder;
-    /* font-family: PingFangSC-Medium; */
     color: #333;
 }
 
@@ -106,7 +102,6 @@ body {
 
 .title .cname {
     float: left;
-    /* font-family: PingFangSC-Medium; */
     font-weight: bolder;
     font-size: 22px;
     line-height: 30px;
@@ -116,10 +111,10 @@ body {
 
 .title .ename {
     float: left;
-    font-family: DINCondensed-Bold;
+    font-family: DINCondensed;
     font-size: 14px;
     color: #969696;
-    padding-left: 10px;
+    padding-left: 12px;
     padding-top: 12px;
 }
 
@@ -131,7 +126,7 @@ body {
 
 .footer-c {
     width: 1160px;
-    padding: 55px 0 38px 0;
+    padding: 40px 0;
     margin: 0 auto;
 }
 
@@ -233,17 +228,19 @@ body {
 
 .links-c a {
     color: #666;
-    padding: 0 6px;
+    padding: 0 5px;
     transition: all ease .4s;
 }
 
 .links-c span {
     padding-left: 24px;
 }
-.links-c a:hover{
+
+.links-c a:hover {
     color: #fff;
 }
-.zx{
+
+.zx {
     position: fixed;
     left: 50%;
     bottom: 200px;
@@ -251,11 +248,14 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-image: linear-gradient(139deg, #A066FC 0%, #5939EC 99%);
+    /* background-image: linear-gradient(139deg, #A066FC 0%, #5939EC 99%); */
+    background: url('../img/zx.png') no-repeat center;
+    background-size: cover;
     cursor: pointer;
     transition: all ease .4s;
 }
-.zx:hover{
-    box-shadow: 0 8px 13px 0 rgba(120,76,243,0.37);
+
+.zx:hover {
+    box-shadow: 0 8px 13px 0 rgba(120, 76, 243, 0.37);
     transform: translateY(-4px);
 }

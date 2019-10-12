@@ -4,7 +4,6 @@
     /* background-image: linear-gradient(179deg, #20253D 0%, #374469 100%); */
     background: url('../img/H5-banner.png') no-repeat center;
     background-size: cover;
-    margin-top: 60px;
     margin-bottom: 38px;
 }
 
@@ -14,10 +13,9 @@
 } */
 
 .main {
-    padding: 0 0 90px 0;
+    padding: 16px 0 90px 0;
     background-color: #f5f5f5;
     overflow: hidden;
-    margin-top: 16px;
 
 }
 
@@ -51,6 +49,8 @@
     font-size: 100px;
     color: #E4E4E4;
     line-height: 192px;
+    font-family: DINCondensed;
+
 }
 
 .super .center p {
@@ -131,7 +131,7 @@
     font-size: 60px;
     line-height: 70px;
     color: #333;
-    font-weight: 100;
+    font-family: DINCondensed;    
 }
 
 .course .timing span {
@@ -270,18 +270,22 @@
 }
 
 .public .img {
-    display: flex;
+    position: relative;
     width: 100%;
-    height: 105px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 38.1818%;
     border-radius: 5px;
     transition: all ease 0.4s;
     cursor: pointer;
 }
 
 .public .img img {
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
     width: 50px;
+    margin: auto;
     transition: all ease 0.4s;
 }
 
@@ -318,11 +322,27 @@
     color: #333333;
     margin-top: 8px;
 }
-
+.public .course-name span{
+    /* display: inline-block; */
+    display: none;
+    width: 58px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color:#1BAA0C;
+    
+}
+.public .tag .course-name span{
+    display: inline-block;
+}
 .public .teacher {
     /* font-family: PingFangSC-Regular; */
     font-size: 12px;
     color: #999999;
     line-height: 17px;
-    margin-top: 2px;
+    margin-top: 4px;
 }

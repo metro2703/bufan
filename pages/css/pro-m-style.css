@@ -3,33 +3,30 @@
         width: 90%;
     }
 
-    body .sub-nav .sub-item {
-        /* width: 20%; */
-        padding: 0 calc(10% - 1em);
-    }
-
     .main .project-list {
         margin-top: 40px;
     }
 
     .main .project-list .project-item {
         width: 100%;
-        height: 440px;
+        height: auto;
     }
 
     .main .projects .project-info {
-        height: 220px;
         width: 100%;
         padding-top: 15px;
+        padding-bottom: 15px;
+
     }
 
     .main .projects .project-info .view {
         margin-top: 20px;
     }
-
+    .projects .project-item .out{
+        width: 100%;
+    }
     .main .projects .project-item .img {
         width: 100%;
-        height: 220px;
-        border-radius: 5px;
+        border-radius: 5px 5px 0 0;
     }
 }

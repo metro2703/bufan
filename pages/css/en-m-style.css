@@ -2,11 +2,6 @@
     .main .main-c {
         width: 90%;
     }
-
-    body .sub-nav .sub-item {
-        /* width: 20%; */
-        padding: 0 calc(10% - 1em);
-    }
     .main .en-swiper {
         width: 100%;
     }
@@ -21,14 +16,13 @@
     }
     .main .desc .btn{
         bottom: 15px;
-        margin: 0 10px;
     }
-    .main .desc .btn.swiper-button-prev{
+    /* .main .desc .btn.swiper-button-prev{
         left: auto;
         right: 50%;
-     }
+     } */
     .main  .desc .btn.swiper-button-next{
-        left: 50%;
+        left: 160px;
         right: auto;
     }
 }
