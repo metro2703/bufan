@@ -29,11 +29,13 @@
     align-items: center;
     background-color: pink;
 }
-.banner-swiper .swiper-slide img{
+
+.banner-swiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 360px;
 }
+
 .banner-swiper .swiper-button {
     width: 51px;
     height: 51px;
@@ -115,8 +117,8 @@
     margin-top: 4px;
 }
 
-.super .super-item:hover{
-    transform: translate3d(0,-4px,0)!important;
+.super .super-item:hover {
+    transform: translate3d(0, -4px, 0) !important;
     /* box-shadow: 0 18px 16px -10px rgba(0, 0, 0, 0.20); */
 }
 
@@ -162,7 +164,7 @@
     margin: 0 auto;
     padding-top: 66px;
     overflow: hidden;
-    
+
 }
 
 .course-list {
@@ -194,7 +196,7 @@
     background-image: url("../img/en-bg.png");
     background-repeat: no-repeat;
     background-size: 312px 253px;
-    background-position: calc(50% - 450px) 1000px;
+    background-position: calc(50% - 500px) 1000px;
     background-attachment: fixed;
     overflow: hidden;
     display: flex;
@@ -289,11 +291,13 @@
     margin: 0 auto;
     padding-top: 100px;
 }
-.work-c{
+
+.work-c {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .swiper-container.work-swiper {
     position: relative;
     height: 530px;
@@ -578,12 +582,14 @@
     transition: all .4s ease;
     background: #000;
 }
-.talk-item .img:hover{
+
+.talk-item .img:hover {
     box-shadow: 0 18px 16px -10px rgba(0, 0, 0, 0.2);
     transform: translateY(-4px);
 }
+
 .talk-item .img:hover a {
-    transform:scale(1.08);
+    transform: scale(1.08);
 }
 
 .talk-item .talk-name {
