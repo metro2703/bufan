@@ -2,7 +2,10 @@
     font-family: 'DINCondensed';
     src: url(../font/DIN\ Condensed\ Bold.woff.ttf);
 }
-
+@font-face{
+    font-family: DINAlternate-Bold;
+    src: url(../font/DIN\ Alternate\ Bold.ttf);
+}
 html,
 body {
     /* font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif; */

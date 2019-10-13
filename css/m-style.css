@@ -1,5 +1,5 @@
 @media(max-width:768px) {
-
+    
     body .swiper-container.banner-swiper {
         width: 100%;
     }
@@ -23,12 +23,13 @@
     }
 
     .main .super-list .super-item {
-        width: 100%;
+        width: 48%;
         margin: 15px 0;
     }
 
     .main .super-item img {
-        display: none;
+        
+        /* display: none; */
         /* width: 170px;
         left: 35px;
         top: 3px; */
@@ -138,12 +139,12 @@
     }
 
     .main .public-list .public-item {
-        width: 100%;
+        width: 48%;
         margin: 15px 0;
     }
 
     .main .public .img img {
-        width: 70px;
+        width: 20%;
     }
 
     /* 不凡说 */
@@ -156,7 +157,7 @@
     }
 
     .main .talk-list .talk-item {
-        width: 100%;
+        width: 48%;
         margin: 15px 0;
     }
 

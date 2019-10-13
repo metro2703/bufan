@@ -29,7 +29,9 @@
     }
 
     .main .course .timing {
-        display: none;
+        /* display: none; */
+        position: static;
+        text-align: left;
     }
 
     .main .course-item .detail {

@@ -82,7 +82,6 @@
 .super .super-item {
     width: 275px;
     /* height: 105px; */
-
     transition: all ease 0.4s;
     cursor: pointer;
 }
@@ -98,8 +97,9 @@
 
 .super-item img {
     position: absolute;
-    left: 16px;
-    top: 6px;
+    left: 5.8181%;
+    top: 5.5142%;
+    width: 31.6363%;
     transition: all ease 0.4s;
 }
 
@@ -107,7 +107,7 @@
     position: absolute;
     left: 42%;
     top: 50%;
-    width: 130px;
+    width: 125px;
     transform: translateY(-50%);
 }
 
@@ -174,13 +174,58 @@
 }
 
 .course .course-item .out {
+    position: relative;
     width: 100%;
     padding-top: 35.0877%;
     background-position: right;
     background-size: auto 100%;
     background-repeat: no-repeat;
 }
+.course .course-tab{
+    position: absolute;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: flex-end;
+    width: 165px;
+    flex-wrap: wrap;
+}
+.course .course-tab .tab-en{
+    font-size: 77px;
+    /* height: 65px; */
+    color: #FFFFFF;
+    line-height: 65px;
+    letter-spacing: 4.5px;
+}
+.course .course-tab .tab-en.h5{
+    letter-spacing: 0;
+}
+.course .course-tab .tab-cn{
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 4px;
+    color: #FFFFFF;
+    font-weight: bolder;
 
+}
+.course .course-tab .view{
+    width: 152px;
+    border: 1px solid #FFFFFF;
+    border-radius: 18px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 13px;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+.course .course-tab .view:hover{
+    border-color: rgba(255,255,255,.6);
+    background-color: rgba(255,255,255,.6);
+}
 /* 学校环境 */
 .enviroment {
     /* height: 600px; */
@@ -330,7 +375,7 @@
 }
 
 .work-swiper .swiper-slide .desc {
-    width: 192px;
+    width: 68%;
     height: 140px;
     font-size: 14px;
     color: #999999;
@@ -344,7 +389,7 @@
     text-align: right;
     font-size: 14px;
     color: #784DF3;
-    width: 192px;
+    width: 68%;
     line-height: 20px;
     margin-top: 15px;
 }

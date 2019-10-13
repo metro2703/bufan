@@ -192,7 +192,7 @@
     font-size: 18px;
     color: #333;
     text-align: left;
-    margin-top: 11px;
+    margin-top: 15px;
 }
 
 .course-item .detail {
@@ -224,6 +224,7 @@
 .course-item .class-name span {
     color: #3f3f3f;
     font-weight: normal;
+    text-indent: 1em;
 }
 
 .course-item .detail .mask {

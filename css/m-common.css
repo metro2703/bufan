@@ -1,4 +1,9 @@
 @media(max-width:768px) {
+    ::-webkit-scrollbar {
+        width:4px;
+        height:4px;
+        /* background-color:#222 */
+    }
     body .header {
         height: 80px;
     }
