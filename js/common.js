@@ -21,7 +21,7 @@ $('.m-nav-icon').click(function () {
 
 window.onscroll = function () {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if( $('.sub-nav')[0]){
+    if ($('.sub-nav')[0]) {
         if (scrollTop > 398) {
             $('.sub-nav').addClass('sub-nav-fixed');
             // $('.header').css('display', 'none');
@@ -32,18 +32,4 @@ window.onscroll = function () {
             $('.main').css('paddingTop', '16px')
         }
     }
-    
-
-    // 滚动视差
-    var h = window.innerHeight;
-    if(scrollTop>(1300-h)){
-        var temp = h - scrollTop / 2; 
-        $('.enviroment-c').css({
-            'background-attachment':'fixed',
-            'background-position': 'calc(50% - 500px) ' + temp + 'px',
-        });
-    }
-   
-    // $('.enviroment-c').css('background-position', 'calc(50% - 500px) ' + temp + 'px');
-
 }

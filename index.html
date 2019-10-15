@@ -58,31 +58,23 @@
         <!-- swiper轮播 -->
         <div class="swiper-container banner-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-color:#3CBE81;">
-                    <div class="out" style="background-image: url(img/en_1.png);">
-                        1
-                    </div>
+                <div class="swiper-slide" data-color="#3CBE81" style="background-image: url(img/en_1.png);">
+
                 </div>
-                <div class="swiper-slide">
-                    <div class="out" style="background-image: url(img/en_1.png);">
-                        2
-                    </div>
+                <div class="swiper-slide" data-color="#F6B429" style="background-image: url(img/en_1.png);">
+
                 </div>
-                <div class="swiper-slide">
-                    <div class="out" style="background-image: url(img/en_1.png);">
-                        3
-                    </div>
+                <div class="swiper-slide" data-color="#FC1E4F" style="background-image: url(img/en_1.png);">
+
                 </div>
-                <div class="swiper-slide">
-                    <div class="out" style="background-image: url(img/en_1.png);">
-                        4
-                    </div>
+                <div class="swiper-slide" data-color="#64D487" style="background-image: url(img/en_1.png);">
+
                 </div>
             </div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next swiper-button"></div>
-            <div class="swiper-button-prev swiper-button"></div>
+
         </div>
+        <div class="swiper-button-next swiper-button"></div>
+        <div class="swiper-button-prev swiper-button"></div>
     </div>
     <div class="main">
         <!-- 不凡优势 -->
@@ -232,7 +224,7 @@
                             <div class="desc">
                                 张*，2016年毕业于佳**大学，本科农业电气化与自动化专业。大学毕业后，从事着与嵌入式毫无关联的工作，对于未来？也常常陷入未知与迷茫之中。 随着物联网时代大幕的拉开
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -252,7 +244,7 @@
                             <div class="desc">
                                 张*，2016年毕业于佳**大学，本科农业电气化与自动化专业。大学毕业后，从事着与嵌入式毫无关联的工作，对于未来？也常常陷入未知与迷茫之中。 随着物联网时代大幕的拉开
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -262,7 +254,7 @@
                             <div class="desc">
 
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -272,7 +264,7 @@
                             <div class="desc">
 
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -282,7 +274,7 @@
                             <div class="desc">
 
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -292,7 +284,7 @@
                             <div class="desc">
 
                             </div>
-                            <a href="" class="detail">详情</a>
+                            <a href="" class="detail">详情 ></a>
                             <div class="avatar"></div>
                             <p class="company">入职公司:网易</p>
                             <p class="role">UI设计师</p>
@@ -446,15 +438,28 @@
     </div>
     <div class="zx"></div>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.color.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script>
         var swiperBanner = new Swiper('.banner-swiper', {
             loop: true,
+            speed: 800,
             // autoplay: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+            },
+            on: {
+                transitionStart: function () {
+                    // alert(this.activeIndex);
+                    var index = this.activeIndex;
+                    var color = $('.banner .swiper-slide').eq(index).data('color');
+                    // console.log(color)
+                    $('.banner').animate({
+                        backgroundColor: color
+                    }, 300)
+                },
             },
         });
         var swiperWork;
