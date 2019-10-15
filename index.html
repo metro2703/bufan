@@ -142,9 +142,7 @@
                                 <p>UI设计</p>
                                 <p>全科班</p>
                             </div>
-                            <div class="view">
-                                点击查看
-                            </div>
+                            <a href="pages/ui/index.html" target="_blank" class="view">点击查看</a>
                         </div>
                     </div>
                 </li>
@@ -159,9 +157,7 @@
                                 <p>前端开发</p>
                                 <p>全科班</p>
                             </div>
-                            <div class="view">
-                                点击查看
-                            </div>
+                            <a href="pages/web/index.html" target="_blank" class="view">点击查看</a>
                         </div>
                     </div>
                 </li>
@@ -317,9 +313,9 @@
                 <span class="ename">SUPER</span>
 
                 <div class="tab">
-                    <div class="tab-item active">全部</div>
-                    <div class="tab-item">ui设计</div>
-                    <div class="tab-item">前端开发</div>
+                    <div data-type="all" class="tab-item active">全部</div>
+                    <div data-type="ui" class="tab-item">ui设计</div>
+                    <div data-type="web" class="tab-item">前端开发</div>
                 </div>
             </div>
 
@@ -442,6 +438,9 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script>
+        $('.public .tab-item').click(function () {
+            var type = $(this).data('type');
+        })
         var swiperBanner = new Swiper('.banner-swiper', {
             loop: true,
             speed: 800,

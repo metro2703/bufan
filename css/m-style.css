@@ -51,8 +51,8 @@
         margin: 15px 0;
     }
 
-    .main .course-list .course-item .out {
-        /* padding-top: 65%; */
+    .main .course .course-tab {
+        transform: translateY(-50%) translateX(-20%) scale(0.8);
     }
 
     /* 学校环境 */
@@ -145,7 +145,7 @@
     }
 
     .main .public-list .public-item {
-        width: 100%;
+        width: 48%;
         margin: 15px 0;
     }
 
@@ -163,7 +163,7 @@
     }
 
     .main .talk-list .talk-item {
-        width: 100%;
+        width: 48%;
         margin: 15px 0;
     }
 
