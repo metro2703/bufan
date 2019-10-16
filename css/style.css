@@ -179,7 +179,7 @@ body {
     transform: translateY(-50%);
     display: flex;
     align-items: flex-end;
-    width: 165px;
+    width: 175px;
     flex-wrap: wrap;
 }
 
@@ -467,7 +467,7 @@ body {
 
 .work-data .work-data-item {
     text-align: center;
-    padding: 48px 0 39px 0;
+    padding: 32px 0 40px 0;
     border-bottom: 1px solid #efefef;
 }
 
@@ -475,8 +475,8 @@ body {
     position: relative;
     font-family: DINCondensed;
     font-size: 48px;
-    height: 48px;
-    line-height: 24px;
+    /* height: 48px; */
+    line-height: 60px;
     color: #424853;
     padding-left: 0;
 }
@@ -492,7 +492,7 @@ body {
 }
 
 .work-data-item p {
-    line-height: 21px;
+    line-height: 24px;
     font-weight: bolder;
     font-size: 15px;
     padding-left: 8px;

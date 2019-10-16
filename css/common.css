@@ -2,10 +2,12 @@
     font-family: 'DINCondensed';
     src: url(../font/DIN\ Condensed\ Bold.woff.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: DINAlternate-Bold;
     src: url(../font/DIN\ Alternate\ Bold.ttf);
 }
+
 html,
 body {
     /* font-family: "Hiragino Sans GB", "Microsoft YaHei","WenQuanYi Micro Hei", sans-serif; */
@@ -246,7 +248,7 @@ body {
 .zx {
     position: fixed;
     left: 50%;
-    bottom: 200px;
+    bottom: 150px;
     margin-left: 630px;
     width: 80px;
     height: 80px;

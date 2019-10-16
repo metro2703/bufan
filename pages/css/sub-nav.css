@@ -12,6 +12,7 @@ body {
     overflow: hidden;
     transition: all ease .4s;
     top: 0;
+    z-index: 999;
 }
 
 .sub-nav.sub-nav-fixed {

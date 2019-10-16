@@ -19,19 +19,23 @@
     }
 
     .main .super-list .super-item {
-        width: 48%;
+        width: 100%;
         margin: 15px 0;
     }
 
-    .main .super-item .super-info {
-        transform: translateY(-50%) translateX(-15%) scale(0.8);
-        /* left: 40%; */
+    .main .super .out {
+        padding: 0;
+        height: 100px;
     }
+
+    /* .main .super-item .super-info {
+        transform: translateY(-50%) translateX(-15%) scale(0.8);
+    } */
 
 
     .main .super-item img {
 
-        /* display: none; */
+        display: none;
         /* width: 170px;
         left: 35px;
         top: 3px; */
@@ -67,10 +71,16 @@
         justify-content: space-between;
         width: 100%;
         margin: 30px 0;
+        margin-bottom: 0;
     }
 
     .main .enviroment .imgs .out {
         width: 48%;
+        margin-bottom: 4%;
+    }
+
+    .enviroment .imgs .img-top {
+        margin-bottom: 0;
     }
 
     .main .enviroment .en-swiper {
@@ -112,6 +122,19 @@
         margin-top: 35px;
     }
 
+    .main .work-data-item .number {
+        font-size: 36px;
+
+    }
+
+    .main .work-data-item .number span {
+        font-size: 20px;
+    }
+
+    .main .work-data-item p {
+        font-size: 12px;
+    }
+
     .main .work-data .work-data-item:nth-child(2) {
         flex: 1;
     }
@@ -122,7 +145,6 @@
 
     .main .work-data .work-data-item {
         width: 30%;
-        padding: 45px 0;
     }
 
     /* 公开课 */
@@ -145,7 +167,7 @@
     }
 
     .main .public-list .public-item {
-        width: 48%;
+        width: 100%;
         margin: 15px 0;
     }
 
@@ -163,7 +185,7 @@
     }
 
     .main .talk-list .talk-item {
-        width: 48%;
+        width: 100%;
         margin: 15px 0;
     }
 

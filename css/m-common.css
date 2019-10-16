@@ -1,9 +1,10 @@
 @media(max-width:768px) {
     ::-webkit-scrollbar {
-        width:4px;
-        height:4px;
+        width: 4px;
+        height: 4px;
         /* background-color:#222 */
     }
+
     body .header {
         height: 80px;
     }
@@ -14,7 +15,7 @@
 
     .header .header-c .nav {
         position: fixed;
-        top: 60px;
+        top: 80px;
         right: 0;
         flex-direction: column;
         width: auto;
@@ -129,10 +130,13 @@
         margin: 0 auto;
     }
 
+    body .links {
+        margin-bottom: 50px;
+    }
+
     .links .links-c {
         width: 90%;
         line-height: 35px;
-
     }
 
     .links .links-c span {
@@ -142,7 +146,7 @@
 
     body .zx {
         width: 100%;
-        height: 60px;
+        height: 50px;
         bottom: 0;
         left: 0;
         border-radius: 0;
@@ -158,7 +162,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        line-height: 60px;
+        line-height: 50px;
         text-align: center;
         color: #fff;
     }

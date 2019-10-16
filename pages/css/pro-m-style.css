@@ -13,18 +13,19 @@
     }
 
     .main .projects .project-info {
-        width: 100%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
+        width: auto;
+        padding: 15px 30px;
     }
 
     .main .projects .project-info .view {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
-    .projects .project-item .out{
+
+    .projects .project-item .out {
         width: 100%;
     }
+
     .main .projects .project-item .img {
         width: 100%;
         border-radius: 5px 5px 0 0;

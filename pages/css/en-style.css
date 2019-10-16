@@ -23,26 +23,35 @@
     overflow: hidden;
 }
 
-.en-swiper {
+.wrap {
     position: relative;
     width: 960px;
-    height: 410px;
+    /* height: 410px; */
     margin: 0 auto;
-    border-radius: 5px;
     margin-top: 64px;
+    overflow: hidden;
 }
 
-.en-swiper .desc {
-    position: absolute;
-    right: 0;
-    top: 0;
+.en-swiper {
+    float: left;
+    width: 640px;
+    height: 410px;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.wrap .desc {
+    position: relative;
+    float: left;
     width: 320px;
-    height: 100%;
+    height: 410px;
     text-align: left;
     background-color: #fff;
-    z-index: 999;
-    padding-left: 100px;
+    z-index: 9;
+    padding-left: 50px;
     box-sizing: border-box;
+    border-radius: 0 5px 5px 0;
+
 }
 
 .desc h3 {
@@ -78,14 +87,15 @@
     background-color: #f5f5f5;
     top: auto;
     bottom: 30px;
+    outline: none;
 }
 
 .desc .btn.swiper-button-next {
-    right: 120px;
+    right: 170px;
 }
 
 .desc .btn.swiper-button-prev {
-    left: 100px;
+    left: 50px;
     transform: rotate(180deg);
 }
 

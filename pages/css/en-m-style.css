@@ -1,28 +1,52 @@
 @media(max-width:768px) {
+    body .banner {
+        height: 0;
+        padding-top: 25.862%;
+    }
+
     .main .main-c {
         width: 90%;
     }
-    .main .en-swiper {
+
+    .main .wrap {
         width: 100%;
+        margin-top: 20px;
     }
-    .main .en-swiper .desc{
-        top: auto;
-        bottom: 0;
+
+    .main .wrap .en-swiper {
+        width: 100%;
+        height: auto;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .main .en-swiper .swiper-slide {
+        /* padding-top: 42.7083%; */
+        height: 250px;
+    }
+
+    .main .wrap .desc {
         width: 100%;
         height: 150px;
+        /* text-align: center; */
+        padding-left: 20px;
+        border-radius: 0 0 5px 5px;
     }
-    .main .desc h3{
+
+    .main .desc h3 {
         margin-top: 14px;
     }
-    .main .desc .btn{
+
+    .main .desc p {
+        margin-top: 10px;
+    }
+
+    .main .desc .btn {
+        left: 20px;
         bottom: 15px;
     }
-    /* .main .desc .btn.swiper-button-prev{
-        left: auto;
-        right: 50%;
-     } */
-    .main  .desc .btn.swiper-button-next{
-        left: 160px;
+
+    .main .desc .btn.swiper-button-next {
+        left: 80px;
         right: auto;
     }
 }

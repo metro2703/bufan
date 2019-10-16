@@ -1,3 +1,4 @@
+var navStatus = false;
 // 快捷导航
 $('.m-nav-icon').click(function () {
     if ($(this).hasClass('close')) {
@@ -8,6 +9,7 @@ $('.m-nav-icon').click(function () {
         })
         $('.nav-item').removeClass('fadeOutRight')
         $('.nav-item').addClass('fadeInRight')
+        navStatus = true;
     } else {
         $(this).addClass('close').removeClass('open');
         $('.nav').removeClass('open');
@@ -16,13 +18,19 @@ $('.m-nav-icon').click(function () {
         })
         $('.nav-item').addClass('fadeOutRight')
         $('.nav-item').removeClass('fadeInRight')
+        navStatus = false;
     }
 });
 
 window.onscroll = function () {
+    if (navStatus) {
+        $('.m-nav-icon').click();
+    }
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var h = $('.header').outerHeight(true) + $('.banner').outerHeight(true);
+    // console.log(h)
     if ($('.sub-nav')[0]) {
-        if (scrollTop > 398) {
+        if (scrollTop > h) {
             $('.sub-nav').addClass('sub-nav-fixed');
             // $('.header').css('display', 'none');
             $('.main').css('paddingTop', '68px')
