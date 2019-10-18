@@ -445,7 +445,7 @@
         $('.public .tab-item').click(function () {
             var type = $(this).data('type');
         })
-        window.onresize = swiperWork;
+        window.onresize = resizeWork;
 
         function slideUp() {
             // 交叉观察者
@@ -493,53 +493,46 @@
             });
         }
 
-
-        function swiperWork() {
-
-            if ($(document).width() <= 768) {
-                if (sWork) {
-                    sWork.params.slidesPerView = 1;
-                    // swiperWork.params.spaceBetween = 0;
-                    sWork.params.centeredSlides = false;
-                    sWork.params.initialSlide = 0;
-                    sWork.params.observe = false;
-                    sWork.params.observeParents = false;
-                } else {
-                    sWork = new Swiper('.work-swiper', {
-                        pagination: {
-                            el: '.work-pagination',
-                            clickable: true,
-                        },
-                    });
-                }
-
-            } else {
-                if (sWork) {
-                    sWork.params.slidesPerView = 3;
-                    // swiperWork.params.spaceBetween = 0;
-                    sWork.params.centeredSlides = true;
-                    sWork.params.initialSlide = 1;
-                    sWork.params.observe = true;
-                    sWork.params.observeParents = true;
-                    // sWork.update()
-                } else {
-                    sWork = new Swiper('.work-swiper', {
-                        slidesPerView: 3,
-                        spaceBetween: 0,
-                        centeredSlides: true,
-                        initialSlide: 1,
-                        observer: true,
-                        observeParents: true,
-                        pagination: {
-                            el: '.work-pagination',
-                            clickable: true,
-                        },
-                    });
-                }
-
+        function swiperWork(){
+            if ($(document).width() <= 768){
+                sWork = new Swiper('.work-swiper', {
+                    pagination: {
+                        el: '.work-pagination',
+                        clickable: true,
+                    },
+                });
+            }else{
+                sWork = new Swiper('.work-swiper', {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    initialSlide: 1,
+                    observer: true,
+                    observeParents: true,
+                    pagination: {
+                        el: '.work-pagination',
+                        clickable: true,
+                    },
+                }); 
             }
         }
-
+        function resizeWork(){
+            
+            if($(document).width() <= 768){
+                sWork.params.slidesPerView = 1;
+                sWork.params.centeredSlides = false;
+                sWork.params.initialSlide = 0;
+                sWork.params.observe = false;
+                sWork.params.observeParents = false;
+            }else{
+                sWork.params.slidesPerView = 3;
+                sWork.params.centeredSlides = true;
+                sWork.params.initialSlide = 1;
+                sWork.params.observe = true;
+                sWork.params.observeParents = true;
+            }
+            
+        }
         function swiperEnviroment() {
             var enviroment = new Swiper('.en-swiper', {
                 loop: true,
