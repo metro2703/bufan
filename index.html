@@ -437,84 +437,123 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script>
+        var sWork;
+        swiperBanner();
+        swiperWork();
+        swiperEnviroment();
+        slideUp();
         $('.public .tab-item').click(function () {
             var type = $(this).data('type');
         })
-        var swiperBanner = new Swiper('.banner-swiper', {
-            loop: true,
-            speed: 800,
-            // autoplay: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-                transitionStart: function () {
-                    // alert(this.activeIndex);
-                    var index = this.activeIndex;
-                    var color = $('.banner .swiper-slide').eq(index).data('color');
-                    // console.log(color)
-                    $('.banner').animate({
-                        backgroundColor: color
-                    }, 300)
-                },
-            },
-        });
-        var swiperWork;
-        if ($(document).width() <= 768) {
-            console.log($(document).width());
-            swiperWork = new Swiper('.work-swiper', {
-                pagination: {
-                    el: '.work-pagination',
-                    clickable: true,
-                },
+        window.onresize = swiperWork;
+
+        function slideUp() {
+            // 交叉观察者
+            var observer = new IntersectionObserver(entries => {
+                entries.forEach(item => {
+                    if (item.isIntersecting) {
+                        // console.log(item.target.children)
+                        var temp = item.target;
+                        $(temp).children().each((index, ele) => {
+                            ele.classList.add('fadeInUp');
+                        })
+                        // item.target.classList.add("fadeInUp"); 
+                        observer.unobserve(item.target); // 移除监听
+                    }
+                });
             });
-        } else {
-            swiperWork = new Swiper('.work-swiper', {
-                slidesPerView: 3,
-                spaceBetween: 0,
-                centeredSlides: true,
-                initialSlide: 1,
-                observer: true,
-                observeParents: true,
-                pagination: {
-                    el: '.work-pagination',
-                    clickable: true,
+
+            var list = document.querySelectorAll('.observer');
+            list.forEach(item => {
+                observer.observe(item);
+            });
+        }
+
+
+        function swiperBanner() {
+            var Banner = new Swiper('.banner-swiper', {
+                loop: true,
+                speed: 800,
+                // autoplay: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                on: {
+                    transitionStart: function () {
+                        // alert(this.activeIndex);
+                        var index = this.activeIndex;
+                        var color = $('.banner .swiper-slide').eq(index).data('color');
+                        // console.log(color)
+                        $('.banner').animate({
+                            backgroundColor: color
+                        }, 300)
+                    },
                 },
             });
         }
 
-        var swiperEnviroment = new Swiper('.en-swiper', {
-            loop: true,
-            autoplay: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.en-pagination',
-                clickable: true,
-            },
-        });
-        // 交叉观察者
-        var observer = new IntersectionObserver(entries => {
-            entries.forEach(item => {
-                if (item.isIntersecting) {
-                    // console.log(item.target.children)
-                    var temp = item.target;
-                    $(temp).children().each((index, ele) => {
-                        ele.classList.add('fadeInUp');
-                    })
-                    // item.target.classList.add("fadeInUp"); 
-                    observer.unobserve(item.target); // 移除监听
-                }
-            });
-        });
 
-        var list = document.querySelectorAll('.observer');
-        list.forEach(item => {
-            observer.observe(item);
-        });
+        function swiperWork() {
+
+            if ($(document).width() <= 768) {
+                if (sWork) {
+                    sWork.params.slidesPerView = 1;
+                    // swiperWork.params.spaceBetween = 0;
+                    sWork.params.centeredSlides = false;
+                    sWork.params.initialSlide = 0;
+                    sWork.params.observe = false;
+                    sWork.params.observeParents = false;
+                } else {
+                    sWork = new Swiper('.work-swiper', {
+                        pagination: {
+                            el: '.work-pagination',
+                            clickable: true,
+                        },
+                    });
+                }
+
+            } else {
+                if (sWork) {
+                    sWork.params.slidesPerView = 3;
+                    // swiperWork.params.spaceBetween = 0;
+                    sWork.params.centeredSlides = true;
+                    sWork.params.initialSlide = 1;
+                    sWork.params.observe = true;
+                    sWork.params.observeParents = true;
+                    // sWork.update()
+                } else {
+                    sWork = new Swiper('.work-swiper', {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        centeredSlides: true,
+                        initialSlide: 1,
+                        observer: true,
+                        observeParents: true,
+                        pagination: {
+                            el: '.work-pagination',
+                            clickable: true,
+                        },
+                    });
+                }
+
+            }
+        }
+
+        function swiperEnviroment() {
+            var enviroment = new Swiper('.en-swiper', {
+                loop: true,
+                autoplay: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.en-pagination',
+                    clickable: true,
+                },
+            });
+        }
     </script>
 </body>
 

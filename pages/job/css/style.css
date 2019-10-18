@@ -83,12 +83,13 @@
     width: 33.333%;
     text-align: center;
 }
-.part-1 .job-detail .item{
+
+.part-1 .job-detail .item {
     display: inline-block;
     background-size: 38px 38px;
     background-repeat: no-repeat;
     background-position: left center;
-    
+
     padding-left: 52px;
 }
 
@@ -204,34 +205,61 @@
     background-color: #fff;
     border-radius: 5px;
 }
+
+.part-4 .offer-img .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part-4 .offer-img .swiper-slide {
+    position: relative;
+    width: 188px;
+    height: 100%;
+}
+
 .part-4 .offer-img img {
-    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 188px;
     height: 334px;
+
 }
 
 
 
 @media(max-width:768px) {
-    .main .main-c{
+    .main .main-c {
         width: 90%;
     }
-    .main .student-info{
-        display: none;
+
+    .main .student-info {
+        /* display: none; */
+        width: 100%;
+        margin-top: 30px;
     }
-    .main .job-info{
+
+    .main .job-info {
         width: 100%;
     }
-    .main .job-info .part-1 .job-detail{
+
+    .main .job-info .part-1 .job-detail {
         height: 240px;
     }
+
     .main .part-1 .job-detail li {
         width: 100%;
         padding: 0;
         background: none;
     }
-    .main .part-1 .job-detail .item{
+
+    .main .part-1 .job-detail .item {
         display: block;
         margin-left: 35px;
+    }
+
+    .main .part-4 .offer-img {
+        padding: 0;
     }
 }

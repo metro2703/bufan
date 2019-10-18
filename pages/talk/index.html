@@ -55,14 +55,14 @@
     <div class="main">
         <div class="main-c talk">
             <div class="talk-title">
-                <div class="talk-tab ml active">全部</div>
-                <div class="talk-tab">ui设计</div>
-                <div class="talk-tab">前端开发</div>
+                <div data-type="all" class="talk-tab ml active">全部</div>
+                <div data-type="ui" class="talk-tab">ui设计</div>
+                <div data-type="web" class="talk-tab">前端开发</div>
             </div>
             <ul class="talk-list">
                 <li class="talk-item">
 
-                    <a href="#" target="_blank">
+                    <a href="talkdetail/index.html" target="_blank">
                         <img src="../../img/img-t.png" alt="">
                     </a>
 
@@ -222,6 +222,11 @@
 
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/common.js"></script>
+    <script>
+        $('.talk .talk-tab').click(function () {
+            var type = $(this).data('type');
+        })
+    </script>
 </body>
 
 </html>
