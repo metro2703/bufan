@@ -20,6 +20,10 @@
     padding-bottom: 27px;
 }
 
+.main-c h3 a {
+    color: #666;
+}
+
 .student-info {
     width: 260px;
     height: 340px;
@@ -137,6 +141,7 @@
 }
 
 .part-3 .check .icon {
+    display: block;
     width: 38px;
     height: 42px;
     font-size: 20px;
@@ -148,11 +153,7 @@
     background-size: 100% 100%;
     border-radius: 3px;
     box-shadow: 0 2px 3px 0 rgba(36, 152, 242, 0.30);
-}
-
-.part-3 .check .check-title {
-    margin-left: 35px;
-
+    margin-right: 35px;
 }
 
 .part-3 .check h4 {
@@ -161,8 +162,6 @@
     color: #333;
     line-height: 25px;
     margin-bottom: 8px;
-
-
 }
 
 .part-3 .check p {
@@ -257,6 +256,10 @@
     .main .part-1 .job-detail .item {
         display: block;
         margin-left: 35px;
+    }
+
+    .part-3 .check .check-title {
+        width: calc(100% - 73px);
     }
 
     .main .part-4 .offer-img {

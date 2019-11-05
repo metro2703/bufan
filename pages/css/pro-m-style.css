@@ -1,4 +1,9 @@
 @media(max-width:768px) {
+    body .banner {
+        height: 0;
+        padding-top: 30%;
+    }
+
     .main .main-c {
         width: 90%;
     }
@@ -13,8 +18,11 @@
     }
 
     .main .projects .project-info {
+        float: none;
+        display: inline-block;
         width: auto;
         padding: 15px 30px;
+        margin: 0 auto;
     }
 
     .main .projects .project-info .view {
@@ -23,6 +31,7 @@
     }
 
     .projects .project-item .out {
+        float: none;
         width: 100%;
     }
 

@@ -493,15 +493,15 @@
             });
         }
 
-        function swiperWork(){
-            if ($(document).width() <= 768){
+        function swiperWork() {
+            if ($(document).width() <= 768) {
                 sWork = new Swiper('.work-swiper', {
                     pagination: {
                         el: '.work-pagination',
                         clickable: true,
                     },
                 });
-            }else{
+            } else {
                 sWork = new Swiper('.work-swiper', {
                     slidesPerView: 3,
                     spaceBetween: 0,
@@ -513,26 +513,28 @@
                         el: '.work-pagination',
                         clickable: true,
                     },
-                }); 
+                });
             }
         }
-        function resizeWork(){
-            
-            if($(document).width() <= 768){
+
+        function resizeWork() {
+
+            if ($(document).width() <= 768) {
                 sWork.params.slidesPerView = 1;
                 sWork.params.centeredSlides = false;
                 sWork.params.initialSlide = 0;
                 sWork.params.observe = false;
                 sWork.params.observeParents = false;
-            }else{
+            } else {
                 sWork.params.slidesPerView = 3;
                 sWork.params.centeredSlides = true;
                 sWork.params.initialSlide = 1;
                 sWork.params.observe = true;
                 sWork.params.observeParents = true;
             }
-            
+
         }
+
         function swiperEnviroment() {
             var enviroment = new Swiper('.en-swiper', {
                 loop: true,
