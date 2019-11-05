@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: DINAlternate-Bold;
+    font-family: 'DINAlternate-Bold';
     src: url(../font/DIN\ Alternate\ Bold.ttf);
 }
 
@@ -120,7 +120,7 @@ body {
     font-size: 14px;
     color: #969696;
     padding-left: 12px;
-    padding-top: 12px;
+    padding-top: 14px;
 }
 
 /* 底部部分 */
