@@ -183,6 +183,10 @@ body {
     flex-wrap: wrap;
 }
 
+.course .course-tab.web {
+    width: 250px;
+}
+
 .course .course-tab .tab-en {
     font-size: 77px;
     /* height: 65px; */
@@ -398,6 +402,7 @@ body {
     height: 80px;
     border-radius: 50%;
     margin-top: 50px;
+    background-color: gray;
 }
 
 .work-swiper .swiper-slide .company {

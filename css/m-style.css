@@ -113,6 +113,14 @@
         padding: 15px 0;
     }
 
+    .main .work-swiper .swiper-slide .desc {
+        width: 80%;
+    }
+
+    .main .work-swiper .swiper-slide .detail {
+        width: 80%;
+    }
+
     .main .work-data {
         display: flex;
         justify-content: space-between;
