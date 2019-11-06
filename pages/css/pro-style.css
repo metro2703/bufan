@@ -37,7 +37,7 @@
     line-height: 30px;
     font-size: 22px;
     color: #333;
-    font-weight: bolder;
+    font-family: 'ali-medium';
 }
 
 .project-list .project-item {
@@ -75,7 +75,7 @@
 .project-info h3 {
     font-size: 26px;
     color: #333;
-    font-weight: bolder;
+    font-family: 'ali-bold';
     line-height: 37px;
     height: 37px;
     margin-bottom: 17px;
@@ -85,6 +85,7 @@
     font-size: 15px;
     color: #666;
     line-height: 21px;
+    font-family: 'ali-regular';
     margin: 9px 0;
 }
 
@@ -96,15 +97,18 @@
     line-height: 40px;
     text-align: center;
     font-size: 15px;
+    font-family: 'ali-regular';
     color: #865EFF;
     border-radius: 20px;
     margin: 40px 0 0 2px;
 }
-.projects .project-item .out{
+
+.projects .project-item .out {
     float: right;
     width: 604px;
     border-radius: 0 5px 5px 0;
 }
+
 .projects .project-item .img {
     width: 100%;
     padding-top: 56.2913%;
@@ -118,6 +122,7 @@
     width: 198px;
     height: 48px;
     font-size: 16px;
+    font-family: 'ali-lighter';
     color: #666;
     text-align: center;
     line-height: 48px;
@@ -132,4 +137,5 @@
 .more:hover {
     background-image: linear-gradient(-40deg, #a066fc 0%, #5939ec 100%);
     color: #fff;
+    font-family: 'ali-regular';
 }

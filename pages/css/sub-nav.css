@@ -41,6 +41,7 @@ body {
     height: 100%; */
     display: block;
     color: #666;
+    font-family: 'ali-medium';
     margin-bottom: 11px;
     transition: all ease .4s;
 
@@ -68,7 +69,7 @@ body {
 
 .sub-nav .sub-item.active a {
     color: #000;
-    font-weight: bolder;
+    font-family: 'ali-bold';
 }
 
 .sub-nav .sub-item:hover .line {
@@ -79,7 +80,7 @@ body {
 
 .sub-nav .sub-item:hover a {
     color: #000;
-    /* font-weight: bolder; */
+    font-family: 'ali-bold';
 }
 
 @media(max-width:768px) {

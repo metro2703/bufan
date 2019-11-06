@@ -39,7 +39,7 @@
     font-size: 22px;
     color: #333;
     margin-bottom: 20px;
-    font-weight: bolder;
+    font-family: 'ali-medium';
 }
 
 .teacher-item {
@@ -72,7 +72,7 @@
     height: 24px;
     border-bottom: 4px solid #FF9600;
     color: #333;
-    font-weight: bolder;
+    font-family: 'ali-bold';
     line-height: 36px;
 }
 
@@ -82,18 +82,19 @@
     margin-top: 21px;
     margin-bottom: 7px;
     color: #333;
-    font-weight: bolder;
+    font-family: 'ali-medium';
 }
 
 .teacher-info .exp {
     font-size: 14px;
     color: #666;
     height: 84px;
+    font-family: 'ali-regular';
 }
 
 .teacher-info .course {
     font-size: 15px;
-    font-weight: bolder;
+    font-family: 'ali-medium';
     color: #FF9600;
 
 }

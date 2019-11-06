@@ -56,7 +56,7 @@
 
 .desc h3 {
     font-size: 24px;
-    font-weight: bolder;
+    font-family: 'ali-bold';
     color: #333;
     line-height: 33px;
     margin-top: 54px;
@@ -67,6 +67,7 @@
     color: #666;
     line-height: 20px;
     margin-top: 13px;
+    font-family: 'ali-regular';
 }
 
 .en-swiper .swiper-slide {
