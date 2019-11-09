@@ -573,7 +573,7 @@ body {
     bottom: 0;
     width: 50px;
     margin: auto;
-    transition: all ease 0.2s;
+    transition: all ease 0.4s;
 }
 
 .public .img:hover {

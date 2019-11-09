@@ -10,88 +10,27 @@
 
 @font-face {
     font-family: 'ali-bold';
-    src: url(../font/Alibaba-PuHuiTi-Bold.ttf);
+    src: url(../font/Alibaba-PuHuiTi-Bold.otf);
 }
 
 @font-face {
     font-family: 'ali-regular';
-    src: url(../font/Alibaba-PuHuiTi-Regular.ttf);
+    src: url(../font/Alibaba-PuHuiTi-Regular.otf);
 }
 
 @font-face {
     font-family: 'ali-lighter';
-    src: url(../font/Alibaba-PuHuiTi-Light.ttf);
+    src: url(../font/Alibaba-PuHuiTi-Light.otf);
 }
 
 @font-face {
     font-family: 'ali-medium';
-    src: url(../font/Alibaba-PuHuiTi-Medium.ttf);
+    src: url(../font/Alibaba-PuHuiTi-Medium.otf);
 }
 
-@font-face {
-    font-family: 'bf-lighter';
-    font-display: swap;
-    src: url('../font/bf-lighter/webfont.eot');
-    /* IE9 */
-    src: url('../font/bf-lighter/webfont.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../font/bf-lighter/webfont.woff2') format('woff2'),
-        url('../font/bf-lighter/webfont.woff') format('woff'),
-        /* chrome、firefox */
-        url('../font/bf-lighter/webfont.ttf') format('truetype'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('../font/bf-lighter/webfont.svg#webfont') format('svg');
-    /* iOS 4.1- */
+body {
+    font-family: 'ali-regular';
 }
-
-@font-face {
-    font-family: 'bf-bold';
-    font-display: swap;
-    src: url('../font/bf-bold/webfont.eot');
-    /* IE9 */
-    src: url('../font/bf-bold/webfont.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../font/bf-bold/webfont.woff2') format('woff2'),
-        url('../font/bf-bold/webfont.woff') format('woff'),
-        /* chrome、firefox */
-        url('../font/bf-bold/webfont.ttf') format('truetype'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('../font/bf-bold/webfont.svg#webfont') format('svg');
-    /* iOS 4.1- */
-}
-
-@font-face {
-    font-family: 'bf-medium';
-    font-display: swap;
-    src: url('../font/bf-medium/webfont.eot');
-    /* IE9 */
-    src: url('../font/bf-medium/webfont.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../font/bf-medium/webfont.woff2') format('woff2'),
-        url('../font/bf-medium/webfont.woff') format('woff'),
-        /* chrome、firefox */
-        url('../font/bf-medium/webfont.ttf') format('truetype'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('../font/bf-medium/webfont.svg#webfont') format('svg');
-    /* iOS 4.1- */
-}
-
-@font-face {
-    font-family: 'bf-regular';
-    font-display: swap;
-    src: url('../font/bf-regular/webfont.eot');
-    /* IE9 */
-    src: url('../font/bf-regular/webfont.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../font/bf-regular/webfont.woff2') format('woff2'),
-        url('../font/bf-regular/webfont.woff') format('woff'),
-        /* chrome、firefox */
-        url('../font/bf-regular/webfont.ttf') format('truetype'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('../font/bf-regular/webfont.svg#webfont') format('svg');
-    /* iOS 4.1- */
-}
-
 
 .header {
     /* position: fixed;
@@ -161,6 +100,8 @@
 
 .nav .nav-item.active a {
     font-family: 'ali-medium';
+    /* font-family: 'ali-regular'; */
+    /* font-weight: 500; */
     color: #333;
 }
 
@@ -170,6 +111,7 @@
 
 .nav .nav-item:hover a {
     font-family: 'ali-medium';
+    /* font-weight: 500; */
     color: #333;
 }
 
