@@ -96,7 +96,7 @@ body {
     position: absolute;
     left: 42%;
     top: 50%;
-    width: 130px;
+    width: 125px;
     transform: translateY(-50%);
 }
 
@@ -269,14 +269,14 @@ body {
 
 .imgs .img-top {
     padding-top: 70.9090%;
-    background: url("../img/img-t.png") no-repeat center;
+    background: url("../img/img-t.jpg") no-repeat center;
     background-size: 100% 100%;
     margin-bottom: 20px;
 }
 
 .imgs .img-bottom {
     padding-top: 70.9090%;
-    background: url("../img/img-b.png") no-repeat center;
+    background: url("../img/img-b.jpg") no-repeat center;
     background-size: 100% 100%;
 }
 

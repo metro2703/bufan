@@ -35,9 +35,25 @@
     }
 
     .main .main-c .super .super-item {
-        line-height: 50px;
         border-radius: 100px;
     }
+
+    /* .super .super-item span {
+        animation: scroll ease 8s infinite;
+    }
+
+    @keyframes scroll {
+        20% {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        100% {
+            margin-left: -3em;
+            margin-right: 3em;
+        }
+
+    } */
 
     .main .course .timing {
         /* top: -20px; */
@@ -63,6 +79,7 @@
 
     .main .course-item .class-name span {
         display: block;
+        height: auto;
     }
 
     .main .public-list {
