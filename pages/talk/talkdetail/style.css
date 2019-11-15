@@ -85,7 +85,8 @@
     line-height: 28px;
     color: #333;
     margin-bottom: 8px;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
 }
 
 .title .date {
@@ -94,4 +95,22 @@
     color: #999;
     font-family: 'ali-regular';
 
+}
+
+
+@media(max-width:768px) {
+    .main .main-c {
+        width: 90%;
+    }
+
+    .main .side-list {
+        display: none;
+    }
+
+    .main .article {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
 }

@@ -59,7 +59,8 @@
     margin: auto;
     font-size: 18px;
     color: #333;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
 }
 
 .super .sibling {
@@ -137,7 +138,7 @@
     display: inline-block;
     font-size: 18px;
     line-height: 1;
-    font-weight: normal;
+    font-family: 'ali-regular';
     vertical-align: middle;
 }
 
@@ -177,7 +178,8 @@
     height: auto;
     line-height: 37px;
     color: #333;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
     text-align: left;
 }
 
@@ -209,7 +211,8 @@
     font-size: 16px;
     color: orange;
     line-height: 22px;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
 }
 
 .detail h3 span {

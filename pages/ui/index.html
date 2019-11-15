@@ -92,20 +92,20 @@
             <!-- 优势比较 -->
             <div class="super">
                 <div class="bf">
-                    <div class="super-item">小单元精品班，老师就在身边，问题随时解决</div>
-                    <div class="super-item">插画/C4D/品牌/代码，课程更全更新</div>
+                    <div class="super-item"><span>小单元精品班，老师就在身边，问题随时解决</span></div>
+                    <div class="super-item"><span>插画/C4D/品牌/代码，课程更全更新</span></div>
                     <div class="super-item"><span>设计/开发配合完成项目，学习真正的工作流程</span></div>
-                    <div class="super-item">全MAC电脑教学，享受专业UI设计师相同配备</div>
+                    <div class="super-item"><span>全MAC电脑教学，享受专业UI设计师相同配备</span></div>
                 </div>
                 <div class="center">
                     VS
                     <p>不凡学院 传统机构</p>
                 </div>
                 <div class="sibling">
-                    <div class="super-item">百人大班，老师在视频里，问题不能随时解决</div>
-                    <div class="super-item">传统通用课程，图标/网页/APP，没有亮点</div>
-                    <div class="super-item">虚拟项目，不懂实际工作中的团队配合</div>
-                    <div class="super-item">WIN电脑，无法学习sketch等专业设计软件</div>
+                    <div class="super-item"><span>百人大班，老师在视频里，问题不能随时解决</span></div>
+                    <div class="super-item"><span>传统通用课程，图标/网页/APP，没有亮点</span></div>
+                    <div class="super-item"><span>虚拟项目，不懂实际工作中的团队配合</span></div>
+                    <div class="super-item"><span>WIN电脑，无法学习sketch等专业设计软件</span></div>
                 </div>
             </div>
             <!-- 课程详情 -->
@@ -291,10 +291,7 @@
                             5、面试指导
                             <span>（面试常见问题指导，就业指导）</span>
                         </p>
-                        <p class="class-name">
-                            6、网站设计
-                            <span>（B端/C端/电商/企业网站设计规范）</span>
-                        </p>
+                       
                         <div class="mask animated">
                             <img src="img/h5-1.png" alt="">
                             <img src="img/h5.png" alt="">
@@ -387,7 +384,16 @@
 
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/common.js"></script>
-
+    <script>
+        var superWidth = $('.super').width();
+        $('.super-item').each(function (index, ele) {
+            if ($(ele).children().eq(0).width() > superWidth) {
+                $(ele).addClass('active');
+            } else {
+                $(ele).removeClass('active');
+            }
+        })
+    </script>
 </body>
 
 </html>

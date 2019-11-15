@@ -101,7 +101,8 @@ body {
 }
 
 .super-item .super-info .info-title {
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
     font-size: 19px;
     line-height: 26px;
     color: #ffffff;

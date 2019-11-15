@@ -43,7 +43,6 @@ body {
     color: #666;
     font-family: 'ali-medium';
     margin-bottom: 11px;
-    transition: all ease .4s;
 
 }
 
@@ -69,7 +68,8 @@ body {
 
 .sub-nav .sub-item.active a {
     color: #000;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
 }
 
 .sub-nav .sub-item:hover .line {
@@ -80,7 +80,8 @@ body {
 
 .sub-nav .sub-item:hover a {
     color: #000;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
 }
 
 @media(max-width:768px) {

@@ -72,7 +72,8 @@
     height: 24px;
     border-bottom: 4px solid #FF9600;
     color: #333;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
     line-height: 36px;
 }
 
@@ -105,4 +106,38 @@
     left: 46px;
     width: 200px;
     height: 255px;
+}
+
+
+
+@media(max-width:768px) {
+    body .banner {
+        height: 0;
+        padding-top: 30%;
+    }
+
+    .main .main-c {
+        width: 90%;
+    }
+
+    .main .teacher-list {
+        margin-top: 40px;
+    }
+
+    .main .teacher-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .main .teacher-info {
+        margin-left: 0;
+        margin-top: 222px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .main .teacher-item img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

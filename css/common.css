@@ -8,10 +8,10 @@
     src: url(../font/DIN\ Alternate\ Bold.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'ali-bold';
     src: url(../font/Alibaba-PuHuiTi-Bold.otf);
-}
+} */
 
 @font-face {
     font-family: 'ali-regular';
@@ -28,8 +28,9 @@
     src: url(../font/Alibaba-PuHuiTi-Medium.otf);
 }
 
+/* pingfangSC-semibold === regular 加粗 */
 body {
-    font-family: 'ali-regular';
+    font-family: 'ali-regular', "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", '微软雅黑', Arial, sans-serif;
 }
 
 .header {

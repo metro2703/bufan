@@ -36,24 +36,9 @@
 
     .main .main-c .super .super-item {
         border-radius: 100px;
+        font-size: 15px;
     }
 
-    /* .super .super-item span {
-        animation: scroll ease 8s infinite;
-    }
-
-    @keyframes scroll {
-        20% {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        100% {
-            margin-left: -3em;
-            margin-right: 3em;
-        }
-
-    } */
 
     .main .course .timing {
         /* top: -20px; */

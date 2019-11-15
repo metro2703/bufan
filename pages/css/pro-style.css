@@ -75,7 +75,8 @@
 .project-info h3 {
     font-size: 26px;
     color: #333;
-    font-family: 'ali-bold';
+    font-family: 'ali-regular';
+    font-weight: bolder;
     line-height: 37px;
     height: 37px;
     margin-bottom: 17px;
@@ -138,4 +139,49 @@
     background-image: linear-gradient(-40deg, #a066fc 0%, #5939ec 100%);
     color: #fff;
     font-family: 'ali-regular';
+}
+
+
+
+@media(max-width:768px) {
+    body .banner {
+        height: 0;
+        padding-top: 30%;
+    }
+
+    .main .main-c {
+        width: 90%;
+    }
+
+    .main .project-list {
+        margin-top: 40px;
+    }
+
+    .main .project-list .project-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .main .projects .project-info {
+        float: none;
+        display: inline-block;
+        width: auto;
+        padding: 15px 30px;
+        margin: 0 auto;
+    }
+
+    .main .projects .project-info .view {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .projects .project-item .out {
+        float: none;
+        width: 100%;
+    }
+
+    .main .projects .project-item .img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
 }
