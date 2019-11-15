@@ -1,0 +1,40 @@
+@media(max-width:768px) {
+    body .banner {
+        height: 0;
+        padding-top: 40%;
+    }
+
+    .main .main-c {
+        width: 90%;
+    }
+
+    body .sub-nav .sub-item {
+        /* width: 20%; */
+        padding: 0 calc(10% - 1em);
+    }
+
+    .main .project {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main .project h2::after {
+        position: static;
+    }
+
+    .main .project .tip {
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .main .tip span {
+        width: 100%;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .main .others .other-item {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
