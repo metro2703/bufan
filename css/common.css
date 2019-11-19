@@ -18,10 +18,10 @@
     src: url(../font/Alibaba-PuHuiTi-Regular.otf);
 }
 
-@font-face {
-    font-family: 'ali-lighter';
-    src: url(../font/Alibaba-PuHuiTi-Light.otf);
-}
+/*@font-face {*/
+    /*font-family: 'ali-lighter';*/
+    /*src: url(../font/Alibaba-PuHuiTi-Light.otf);*/
+/*}*/
 
 @font-face {
     font-family: 'ali-medium';
@@ -114,7 +114,8 @@ body {
     background-size: 90% 95%;
     cursor: pointer;
     opacity: 0;
-    transition: all ease .4s;
+    transform:translateY(-100%);
+    transition: all ease .3s;
 }
 
 .nav .nav-item.web a::after {
@@ -130,39 +131,8 @@ body {
     background-size: 90% 95%;
     cursor: pointer;
     opacity: 0;
-    transition: all ease .4s;
-}
-
-.nav .nav-item.ui.active a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 4em;
-    height: 50px;
-    margin-left: -2em;
-    margin-top: -20px;
-    background: #fff url(../img/UI.png) no-repeat center;
-    background-size: 90% 95%;
-    cursor: pointer;
-    opacity: 0;
-    transition: all ease .4s;
-}
-
-.nav .nav-item.web.active a::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 4em;
-    height: 50px;
-    margin-left: -2em;
-    margin-top: -20px;
-    background: #fff url(../img/WEB.png) no-repeat center;
-    background-size: 90% 95%;
-    cursor: pointer;
-    opacity: 0;
-    transition: all ease .4s;
+    transform:translateY(-100%);
+    transition: all ease .3s;
 }
 
 .nav .nav-item.active a {
@@ -176,6 +146,7 @@ body {
 
 .nav .nav-item.active.ui a::after {
     opacity: 1;
+    transform:translateY(0);
 }
 
 .nav .nav-item.active.ui span {
@@ -184,6 +155,7 @@ body {
 
 .nav .nav-item.active.web a::after {
     opacity: 1;
+    transform:translateY(0);
 }
 
 .nav .nav-item.active.web span {
@@ -201,10 +173,14 @@ body {
 
 .nav .nav-item.ui:hover a::after {
     opacity: 1;
+    transform:translateY(0);
+
 }
 
 .nav .nav-item.web:hover a::after {
     opacity: 1;
+    transform:translateY(0);
+
 }
 
 .nav .nav-item.ui:hover span {
@@ -254,7 +230,7 @@ body {
     font-size: 14px;
     color: #969696;
     padding-left: 12px;
-    padding-top: 12px;
+    padding-top: 13px;
 }
 
 /* 底部部分 */

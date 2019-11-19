@@ -323,31 +323,31 @@
 
             <ul class="public-list observer">
                 <li class="public-item animated" style="animation-delay: 0s">
-                    <div class="img">
+                    <a class="img">
                         <img src="img/h5_logo.png" alt="">
-                    </div>
+                    </a>
                     <p class="course-name"><span>更新中</span>HTML5-基础教程</p>
                     <p class="teacher">主讲老师:丁老师</p>
                 </li>
                 <li class="public-item tag animated" style="animation-delay: 0.1s">
-                    <div class="img">
+                    <a class="img">
                         <img src="img/ai_logo.png" alt="" srcset="">
-                    </div>
+                    </a>
                     <p class="course-name"><span>更新中</span>HTML5-基础教程</p>
                     <p class="teacher">主讲老师:丁老师</p>
                 </li>
                 <li class="public-item animated" style="animation-delay: 0.2s">
-                    <div class="img">
+                    <a class="img">
                         <img src="img/ae_logo.png" alt="" srcset="">
 
-                    </div>
+                    </a>
                     <p class="course-name"><span>更新中</span>HTML5-基础教程</p>
                     <p class="teacher">主讲老师:丁老师</p>
                 </li>
                 <li class="public-item animated" style="animation-delay: 0.3s">
-                    <div class="img">
+                    <a class="img">
                         <img src="img/sketch_logo.png" alt="" srcset="">
-                    </div>
+                    </a>
                     <p class="course-name"><span>更新中</span>HTML5-基础教程</p>
                     <p class="teacher">主讲老师:丁老师</p>
                 </li>
@@ -439,15 +439,119 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script>
+        var course = {
+            all: [{
+                    tag: '',
+                    title: 'HTML5 - 基础教程',
+                    teacher: '丁老师',
+                    url: 'https://www.bilibili.com/video/av31008479',
+                    icon: 'h5_logo.png',
+                    color: 'linear-gradient(90deg, #277be1 0%, #1db0e6 100%);'
+                },
+                {
+                    tag: '更新中',
+                    title: 'Ai - 基础教程',
+                    teacher: '费老师',
+                    url: '',
+                    icon: 'ai_logo.png',
+                    color: 'linear-gradient(90deg, #ff8c00 0%, #ffbb00 100%)'
+                },
+                {
+                    tag: '',
+                    title: 'Ae - 动效基础教程',
+                    teacher: '马老师',
+                    url: '',
+                    icon: 'ae_logo.png',
+                    color: 'linear-gradient(90deg, #9944c4 0%, #bc63cc 100%)'
+                },
+                {
+                    tag: '',
+                    title: 'Sketch - 基础教程',
+                    teacher: '李老师',
+                    url: 'https://space.bilibili.com/285081004/channel/detail?cid=46596',
+                    icon: 'sketch_logo.png',
+                    color: 'linear-gradient(90deg, #120a33 0%, #120a33 100%)'
+                },
+                // {
+                //     isUpdate:false,
+                //     title:'Ps - 基础教程',
+                //     teacher:'李老师',
+                //     url:'',
+                //     icon:'PS.png',
+                //     color:'linear-gradient(90deg, #120a33 0%, #120a33 100%)'
+                // }
+            ],
+            ui: [{
+                    tag: '',
+                    title: 'Ai - 基础教程',
+                    teacher: '费老师',
+                    url: '',
+                    icon: 'ai_logo.png',
+                    color: 'linear-gradient(90deg, #ff8c00 0%, #ffbb00 100%)'
+                },
+                {
+                    tag: '',
+                    title: 'Ae - 动效基础教程',
+                    teacher: '马老师',
+                    url: '',
+                    icon: 'ae_logo.png',
+                    color: 'linear-gradient(90deg, #9944c4 0%, #bc63cc 100%)'
+                },
+                {
+                    tag: '',
+                    title: 'Sketch - 基础教程',
+                    teacher: '李老师',
+                    url: 'https://space.bilibili.com/285081004/channel/detail?cid=46596',
+                    icon: 'sketch_logo.png',
+                    color: 'linear-gradient(90deg, #120a33 0%, #120a33 100%)'
+                },
+                {
+                    tag: '',
+                    title: 'Ps - 基础教程',
+                    teacher: '李老师',
+                    url: '',
+                    icon: 'PS.png',
+                    color: 'linear-gradient(90deg, #120a33 0%, #120a33 100%)'
+                }
+            ],
+            web: [{
+                tag: '',
+                title: 'HTML5 - 基础教程',
+                teacher: '丁老师',
+                url: 'https://www.bilibili.com/video/av31008479',
+                icon: 'h5_logo.png',
+                color: 'linear-gradient(90deg, #277be1 0%, #1db0e6 100%);'
+            }, ]
+        };
         var sWork;
+        var publicCourse = document.querySelector(".public-list");
         swiperBanner();
         swiperWork();
         swiperEnviroment();
         slideUp();
+        initPublic(publicCourse, course.all);
         $('.public .tab-item').click(function () {
             var type = $(this).data('type');
+            $(this).addClass('active').siblings().removeClass('active');
+            initPublic(publicCourse, course[type]);
         })
-        window.onresize = resizeWork;
+        window.onresize = function () {
+            resizeWork();
+        };
+
+        function initPublic(el, arr) {
+            var str = '';
+            for (var i = 0; i < arr.length; i++) {
+                str +=
+                    '<li class="public-item animated' + (arr[i].tag ? ' tag' : '') +
+                    '" style="animation-delay: 0s;"><a href="' + arr[i].url +
+                    '" class="img" style="background-image:' +
+                    arr[i].color + ';"><img src="img/' + arr[i].icon +
+                    '" alt=""></a><p class="course-name"><span>' + (arr[i].tag ? '更新中' : '') + '</span>' + arr[i]
+                    .title + '</p><p class="teacher">主讲老师：' + arr[i].teacher + '</p></li>';
+            }
+            el.innerHTML = str;
+        }
 
         function slideUp() {
             // 交叉观察者

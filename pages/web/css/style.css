@@ -188,8 +188,8 @@
     /* height: 25px; */
     line-height: 25px;
     font-size: 18px;
-    font-family: 'ali-lighter';
-    color: #333;
+    /*font-family: 'ali-lighter';*/
+    color: #888;
     text-align: left;
     margin-top: 11px;
     margin-bottom: 30px;
@@ -275,6 +275,7 @@
 
 .public .img {
     position: relative;
+    display: block;
     width: 100%;
     padding-top: 38.1818%;
     border-radius: 5px;

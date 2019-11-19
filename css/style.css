@@ -402,6 +402,10 @@ body {
     border-radius: 50%;
     margin-top: 50px;
     background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .work-swiper .swiper-slide .company {
@@ -559,11 +563,11 @@ body {
 
 .public .img {
     position: relative;
+    display: block;
     width: 100%;
     padding-top: 38.1818%;
     border-radius: 5px;
     transition: all ease 0.4s;
-    cursor: pointer;
 }
 
 .public .img img {
@@ -586,21 +590,21 @@ body {
     transform: rotate(20deg);
 }
 
-.public-item:nth-child(n + 1) .img {
-    background-image: linear-gradient(90deg, #277be1 0%, #1db0e6 100%);
-}
+/*.public-item:nth-child(n + 1) .img {*/
+    /*background-image: linear-gradient(90deg, #277be1 0%, #1db0e6 100%);*/
+/*}*/
 
-.public-item:nth-child(n + 2) .img {
-    background-image: linear-gradient(90deg, #ff8c00 0%, #ffbb00 100%);
-}
+/*.public-item:nth-child(n + 2) .img {*/
+    /*background-image: linear-gradient(90deg, #ff8c00 0%, #ffbb00 100%);*/
+/*}*/
 
-.public-item:nth-child(n + 3) .img {
-    background-image: linear-gradient(90deg, #9944c4 0%, #bc63cc 100%);
-}
+/*.public-item:nth-child(n + 3) .img {*/
+    /*background-image: linear-gradient(90deg, #9944c4 0%, #bc63cc 100%);*/
+/*}*/
 
-.public-item:nth-child(n + 4) .img {
-    background-image: linear-gradient(90deg, #120a33 0%, #120a33 100%);
-}
+/*.public-item:nth-child(n + 4) .img {*/
+    /*background-image: linear-gradient(90deg, #120a33 0%, #120a33 100%);*/
+/*}*/
 
 .public .course-name {
     /* font-family: PingFangSC-Medium; */
@@ -649,14 +653,17 @@ body {
 
 .talk-list {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+    flex-wrap: nowrap;
     padding-top: 20px;
 }
 
 .talk .talk-item {
     width: 275px;
 }
-
+.talk-item:not(:nth-child(4n)){
+    margin-right: 20px;
+}
 .talk-item a {
     position: relative;
     display: block;
